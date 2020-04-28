@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <header>
+    <div id="nav">
+      <a href="#ab" onclick="#ab">About Me</a>
+      <a href="#projects">Portfolio</a>
+     <a href="#contact">Contact </a>
+
+          </div>
+  </header>
+
+
+<div id="top">
+  <video autoplay muted loop id="myVideo">
+    <source src="/Users/vladi/Desktop/Web-Site/video/main-video.mp4" type="video/mp4">
+  </video>
+  <h1>Hello, I'm Vlad Iglin.</h1>
+  <h3>Los Angeles based Web Developer and Project Manager.</h3>
+<div class="buttons-coll">
+<button class="custom-btn btn-1" onclick="location.href='#projects'"> CHECK MY WORK</button>
+</div>
+</div>
+
+<div id="ab">
+  <h2 align='center'>About </h2>
+</div>
+
+
+
+<div id="main">
+  <div id="pic">
+    <img src="/Users/vladi/Desktop/Web-Site/images/my_photo.jpg" alt=""> </div>
+
+  <div class="text">
+    <h3>3 words: <br> Motivated. Creativity. Team Player.</h3>
+    <span>I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken many twists and turns — from ride operator in amusement park and mover,  to small business owner and entrepreneur — I've never stopped engaging my passion for helping others and solving problems.
+As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to change the world literally. That's why I’m excited to make a big impact at a high growth company.</span>
+  </div>
+</div>
+
+
+
+<div id="skills">
+  <h2>Skilss</h2>
+
+<div class="big">
+
+<div class="img" >
+  <img src="/Users/vladi/Desktop/Web-Site/images/html5.png" alt="">
+  <span>HTML5</span>
+</div>
+
+<div class="img" >
+  <img src="/Users/vladi/Desktop/Web-Site/images/css3.png" alt="">
+  <span>CSS3</span>
+</div>
+
+<div class="img">
+  <img src="/Users/vladi/Desktop/Web-Site/images/javascript.png" alt="">
+  <span>JavaScript</span>
+</div>
+</div>
+</div>
+
+
+<div id="projects">
+  <h2>My Projects</h2>
+  <h4>Will be added later</h4>
+
+<div class="img">
+  <img src="http://findmatthew.com/style/../img/thumb-7.jpg" alt="">
+  <span>CRM for Moving Company</span>
+</div>
+<div class="img">
+  <img src="http://findmatthew.com/style/../img/thumb-7.jpg" alt="">
+  <span>CRM for Moving Company</span>
+</div>
+<div class="img">
+  <img src="http://findmatthew.com/style/../img/thumb-7.jpg" alt="">
+  <span>CRM for Moving Company</span>
+</div>
+<div class="img">
+  <img src="http://findmatthew.com/style/../img/thumb-7.jpg" alt="">
+  <span>CRM for Moving Company</span>
+</div>
+</div>
+
+
+
+<div id="myContacts">
+<div id="">
+  <span>iglin8@gmail.com</span>
+</div>
+<div id="">
+  <a href="https://www.linkedin.com/in/vlad-iglin/"> Linkedin</a>
+</div>
+
+</div>
+
+
+<div id="contact">
+  <center> <h5>Contact Me</h5> </contact>
+
+
+    <form id="form_input" >
+      <label for="name">Name <span>*</span></label><br>
+      <input type="text" placeholder="Your Name" name="name" id='name'><br>
+
+      <label for="email">Email <span>*</span></label><br>
+      <input type="text" placeholder="Your Email" name="email" id='email'><br>
+
+      <label for="message">Message <span>*</span></label><br>
+      <textarea  placeholder="Your Message" name="message" id='message'> </textarea><br>
+      <div id="mess_send" class="btn"> Send </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> function slowScroll(id) {
+  $('html,body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+}
+$(document).on("scroll", function () {
+  if($(window).scrollTop() === 0)
+  $('nav').removeClass('fixed');
+  else
+  $('header').attr('class', 'fixed');
+});
+</script>
+    <script src="script.js"></script>
+  </body>
+</html>
